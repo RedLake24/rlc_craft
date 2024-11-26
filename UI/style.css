@@ -1,0 +1,71 @@
+.hidden {
+    display: none;
+}
+
+#craftingMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    z-index: 1000;
+}
+
+#craftingItems {
+    list-style-type: none;
+    padding: 0;
+}
+
+#craftingItems li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#craftingItems li.selected {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.item-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.item-label {
+    flex: 1;
+    text-align: left;
+}
+
+.craft-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#messageBox {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+}
+
+#messageBox.hidden {
+    display: none;
+}
